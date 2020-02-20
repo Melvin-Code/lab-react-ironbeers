@@ -16,9 +16,9 @@ class App extends Component {
 
   componentDidMount() {
     this.getAllTheBeer();
-    Axios.get("https://api.nasa.gov/planetary/apod?api_key=IxkHydHwlMx9OEppdprkgRjN1zlJcSOYzrVK6sZB").then(res=>{
-      console.log(res.data)
-    })
+    // Axios.get("https://api.nasa.gov/planetary/apod?api_key=IxkHydHwlMx9OEppdprkgRjN1zlJcSOYzrVK6sZB").then(res=>{
+    //   console.log(res.data)
+    // })
   }
   getAllTheBeer = () => {
     axios.get("https://ih-beers-api2.herokuapp.com/beers").then(res => {
